@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chessboard Strategy | Strategy and Execution</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;600;700&family=Sora:wght@500;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon-black.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="assets/images/favicon-white.png" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="neonTrailCanvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Chessboard Strategy">
+        <img class="brand-logo" src="assets/images/chessboard-strategy-logo-white.png" alt="Chessboard Strategy" loading="eager" decoding="async">
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="about.html" class="link-underline-anim">About</a></li>
+          <li><a href="services.html" class="link-underline-anim">Services</a></li>
+          <li><a href="index.html#our-works" class="link-underline-anim">Our Works</a></li>
+          <li><a href="insights.html" class="link-underline-anim">Blogs</a></li>
+          <li><a href="contact.html" class="btn btn-small btn-contact-lime">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="chessboard-header is--loading is--hidden" aria-label="Intro">
+    <div class="chessboard-loader">
+      <div class="chessboard__h1">
+        <div class="chessboard__h1-start">
+          <span class="chessboard__letter">C</span>
+          <span class="chessboard__letter">h</span>
+          <span class="chessboard__letter">e</span>
+          <span class="chessboard__letter">s</span>
+          <span class="chessboard__letter">s</span>
+        </div>
+        <div class="chessboard-loader__box">
+          <div class="chessboard-loader__box-inner">
+            <div class="chessboard__growing-image">
+              <div class="chessboard__growing-image-wrap">
+                <img class="chessboard__cover-image-extra is--1" src="assets/images/heroimage1.jpg" loading="lazy" alt="" />
+                <img class="chessboard__cover-image-extra is--2" src="assets/images/heroimage2.jpg" loading="lazy" alt="" />
+                <img class="chessboard__cover-image-extra is--3" src="assets/images/heroimage4.jpg" loading="lazy" alt="" />
+                <img class="chessboard__cover-image-extra is--4" src="assets/images/heroimage5.jpg" loading="lazy" alt="" />
+                <img class="chessboard__cover-image" src="assets/images/herimage5.jpg" loading="lazy" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chessboard__h1-end">
+          <span class="chessboard__letter">b</span>
+          <span class="chessboard__letter">o</span>
+          <span class="chessboard__letter">a</span>
+          <span class="chessboard__letter">r</span>
+          <span class="chessboard__letter">d Co.</span>
+        </div>
+      </div>
+    </div>
+    <div class="chessboard-header__content">
+      <div class="chessboard-header__bottom">
+        <h1 class="chessboard-welcome">Welcome to<br /><span class="chessboard-welcome-brand">Chessboard Strategy</span></h1>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section hero hero-bg reveal reveal-up" id="wordScrubHero">
+      <div class="container hero-grid hero-bg__content">
+        <div class="stack section-intro">
+          <p class="hero-brand-mark">Chessboard Strategy</p>
+          <p class="eyebrow">Business Strategy and Digital Growth</p>
+          <h1 class="hero-dynamic-headline" aria-label="Grow with clarity Scale with execution">
+            <span class="hero-line">
+              <span class="hero-line-fixed">Grow with</span>
+              <span class="hero-word-slot hero-word-slot-a" id="heroWordSlotA"></span>
+            </span>
+            <span class="hero-line">
+              <span class="hero-line-fixed">Scale with</span>
+              <span class="hero-word-slot hero-word-slot-b" id="heroWordSlotB"></span>
+            </span>
+          </h1>
+          <p class="lead">At Chessboard, we believe growth is not luck.<br>It is planning, precision, and powerful execution.<br>Just like in chess, every move matters.</p>
+          <p>We are not just a marketing agency.<br>We are your strategy partner.</p>
+          
+        </div>
+        <img class="hero-inline-image hero-inline-image--right" src="assets/images/page2.jpg" alt="Chessboard Strategy team in strategy discussion" />
+      </div>
+    </section>
+
+    <section class="section vision-cards-section reveal reveal-up">
+      <div class="container">
+        <p class="eyebrow">Chessboard Strategy</p>
+        <h2>What Makes Chessboard Different</h2>
+      </div>
+      <section class="cards" aria-label="Vision mission commitments cards">
+        <details style="--rotation: 7deg">
+          <summary>
+            <h1>Strategy First Approach</h1>
+            <img class="card-icon" src="assets/images/card-icon-strategy-first.png" alt="" aria-hidden="true" />
+          </summary>
+          <div class="back">
+            <p>At Chessboard Strategy, we don't begin with campaigns, content, or ads.</p>
+            <p>We begin by understanding the board.</p>
+            <p>Your industry, your competition, your audience, your strengths, and the gaps holding growth back. Because strong execution only works when the direction is clear.</p>
+            <p>We study the landscape first, identify the smartest opportunities, and build a strategy designed to move your business forward with intent.</p>
+          </div>
+        </details>
+
+        <details style="--rotation: -6deg">
+          <summary>
+            <h1>Data Backed Decisions</h1>
+            <img class="card-icon" src="assets/images/card-icon-data-backed.png" alt="" aria-hidden="true" />
+          </summary>
+          <div class="back">
+            <p>Every move we make is guided by insight, not assumptions.</p>
+            <p>No random posting. No guesswork. No chasing trends without purpose.</p>
+            <p>At Chessboard Strategy we use research, analytics, and performance tracking to understand what is working, what needs to improve, and where the next opportunity lies.</p>
+            <p>So every campaign, every piece of content, and every decision is backed by real data and built for measurable impact.</p>
+          </div>
+        </details>
+
+        <details style="--rotation: 4deg">
+          <summary>
+            <h1>Long Term Thinking</h1>
+            <img class="card-icon" src="assets/images/card-icon-long-term.png" alt="" aria-hidden="true" />
+          </summary>
+          <div class="back">
+            <p>Quick wins can create attention. But real growth comes from building systems that last.</p>
+            <p>At Chessboard Strategy we focus on strategies that create consistent lead flow, stronger market positioning, and measurable business momentum over time.</p>
+            <p>Because the best brands do not just grow fast. They grow with intention.</p>
+          </div>
+        </details>
+      </section>
+    </section>
+
+    <section class="section section-alt reveal reveal-up">
+      <div class="container bb-slider-wrap">
+        <div class="header">
+          <p class="subtitle">Services</p>
+          <h2 class="main-title">We Provide</h2>
+          <p class="lead">Strategic solutions designed for scalable growth.</p>
+        </div>
+
+        <div class="slider-container" id="sliderContainer">
+          <div class="slider-track" id="sliderTrack">
+            <div class="bb-slider-card" data-title="Strategic Marketing Planning" data-desc="Structured marketing plans aligned to business goals, audience behavior, and market opportunities.">
+              <img src="assets/images/service-strategic-marketing.jpg" alt="Strategic Marketing Planning">
+              <div class="hover-overlay"><span>Click to see more</span></div>
+            </div>
+            <div class="bb-slider-card" data-title="Business Growth Consulting" data-desc="Growth advisory focused on positioning, expansion priorities, and scalable decision-making.">
+              <img src="assets/loader/cb1.jpg" alt="Business Growth Consulting">
+              <div class="hover-overlay"><span>Click to see more</span></div>
+            </div>
+            <div class="bb-slider-card" data-title="Performance Advertising" data-desc="ROI-focused paid campaigns optimized across channels for measurable lead and revenue growth.">
+              <img src="assets/loader/cb2.jpg" alt="Performance Advertising">
+              <div class="hover-overlay"><span>Click to see more</span></div>
+            </div>
+            <div class="bb-slider-card" data-title="Social Media Strategy" data-desc="Platform-specific social strategy built to strengthen brand authority and audience engagement.">
+              <img src="assets/loader/cb3.jpg" alt="Social Media Strategy">
+              <div class="hover-overlay"><span>Click to see more</span></div>
+            </div>
+            <div class="bb-slider-card" data-title="Website Strategy and Development" data-desc="Conversion-ready website strategy and development tailored to customer journeys and growth goals.">
+              <img src="assets/loader/cb4.jpg" alt="Website Strategy and Development">
+              <div class="hover-overlay"><span>Click to see more</span></div>
+            </div>
+            <div class="bb-slider-card" data-title="Revenue and Sales Optimization" data-desc="Funnel and sales process optimization to improve conversion rates, deal velocity, and revenue consistency.">
+              <img src="assets/images/service-revenue-sales.jpg" alt="Revenue and Sales Optimization">
+              <div class="hover-overlay"><span>Click to see more</span></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="inline-actions"><a href="services.html#service-offerings" class="btn btn-secondary">Explore Our Services</a></p>
+      </div>
+    </section>
+
+    <section class="section wave-services-section" id="waveServices">
+      <div class="container">
+        <p class="eyebrow">Process Journey</p>
+        <h2>Our Process</h2>
+      </div>
+
+      <div class="wave-services-scroll">
+        <div class="wave-services-sticky container">
+          <div class="wave-services-grid">
+            <div class="wave-services-list" role="list">
+              <article class="wave-service-item is-active" data-index="0" role="listitem">
+                <h3><span class="chess-piece-symbol" aria-hidden="true">&#9812;</span> The Brand</h3>
+                <p>In chess, everything revolves around protecting the king. In marketing, the brand holds the same importance. Every strategy, campaign, and creative move is designed to strengthen its position and secure long term growth.</p>
+              </article>
+              <article class="wave-service-item" data-index="1" role="listitem">
+                <h3><span class="chess-piece-symbol" aria-hidden="true">&#9813;</span> The Strategy</h3>
+                <p>The queen is the most powerful piece on the board. It moves with freedom, speed, and precision. Strategy works similarly in marketing. It connects insight, creativity, and execution to drive powerful moves that shape the brand's direction.</p>
+              </article>
+              <article class="wave-service-item" data-index="2" role="listitem">
+                <h3><span class="chess-piece-symbol" aria-hidden="true">&#9814;</span> The Reach</h3>
+                <p>Rooks dominate the board with strong and direct moves. In marketing, this represents scale and reach. Media planning, digital presence, and distribution ensure that the brand message travels across platforms with strength and consistency.</p>
+              </article>
+              <article class="wave-service-item" data-index="3" role="listitem">
+                <h3><span class="chess-piece-symbol" aria-hidden="true">&#9815;</span> The Creativity</h3>
+                <p>Bishops move diagonally, finding angles others often miss. Creativity does the same. It uncovers fresh perspectives, bold storytelling and distinctive ideas that make brands memorable.</p>
+              </article>
+              <article class="wave-service-item" data-index="4" role="listitem">
+                <h3><span class="chess-piece-symbol" aria-hidden="true">&#9816;</span> The Innovation</h3>
+                <p>The knight moves differently from every other piece. It surprises and breaks patterns. Innovation in marketing follows the same path. It challenges the expected, introduces disruptive ideas, and creates campaigns that stand out in crowded markets.</p>
+              </article>
+              <article class="wave-service-item" data-index="5" role="listitem">
+                <h3><span class="chess-piece-symbol" aria-hidden="true">&#9817;</span> The Consistency</h3>
+                <p>Pawns may seem small, but they build the game move by move. In marketing, these are the consistent efforts that drive real momentum. Content, engagement, and performance marketing steadily push the brand forward.</p>
+              </article>
+            </div>
+
+            <div class="wave-line-wrap" aria-hidden="true">
+              <svg class="wave-line-svg" viewBox="0 0 120 620" preserveAspectRatio="xMidYMid meet">
+                <path id="servicesWavePath" class="wave-line-base" d="M60 10 C20 75 100 135 60 200 C20 265 100 325 60 390 C20 455 100 515 60 610" />
+                <path id="servicesWavePathProgress" class="wave-line-progress" d="M60 10 C20 75 100 135 60 200 C20 265 100 325 60 390 C20 455 100 515 60 610" />
+              </svg>
+              <span id="servicesWaveDot" class="wave-line-dot"></span>
+            </div>
+
+            <div class="wave-services-media">
+              <figure class="wave-media-card is-active" data-index="0">
+                <img src="assets/images/process1.jpg" alt="Business analytics dashboard" />
+              </figure>
+              <figure class="wave-media-card" data-index="1">
+                <img src="assets/images/process2.jpg" alt="Marketing strategy planning" />
+              </figure>
+              <figure class="wave-media-card" data-index="2">
+                <img src="assets/images/process3.jpg" alt="Digital campaign execution" />
+              </figure>
+              <figure class="wave-media-card" data-index="3">
+                <img src="assets/images/process4.jpg" alt="Team optimizing growth" />
+              </figure>
+              <figure class="wave-media-card" data-index="4">
+                <img src="assets/images/process5.png" alt="Business expansion advisory" />
+              </figure>
+              <figure class="wave-media-card" data-index="5">
+                <img src="assets/images/process6.jpg" alt="Consistent marketing execution" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="our-works" class="section works-section reveal reveal-up">
+      <div class="container works-carousel">
+        <p class="eyebrow">Our Works</p>
+        <h2>Campaigns and Growth Stories We Have Built</h2>
+        <p class="lead">A rotating showcase of creative, consulting, and marketing execution moments.</p>
+                <div class="scene">
+  <div class="a3d" style="--n: 8">
+    <video class="card card-video" style="--i: 0" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="BBC Gagme BTS video 1"><source src="assets/videos/works/bbc-gagme-bts-gaurav-sir2.mp4" type="video/mp4" /></video>
+    <video class="card card-video" style="--i: 1" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="Gagme Tyla Final video 1"><source src="assets/videos/works/gagme-tyla-final2.mp4" type="video/mp4" /></video>
+    <video class="card card-video" style="--i: 2" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="Topboy Event video 1"><source src="assets/videos/works/topboy-event.mp4" type="video/mp4" /></video>
+    <video class="card card-video" style="--i: 3" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="BBC Gagme BTS video 2"><source src="assets/videos/works/bbc-gagme-bts-gaurav-sir2.mp4" type="video/mp4" /></video>
+    <video class="card card-video" style="--i: 4" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="Gagme Tyla Final video 2"><source src="assets/videos/works/gagme-tyla-final2.mp4" type="video/mp4" /></video>
+    <video class="card card-video" style="--i: 5" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="Topboy Event video 2"><source src="assets/videos/works/topboy-event.mp4" type="video/mp4" /></video>
+    <video class="card card-video" style="--i: 6" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="BBC Gagme BTS video 3"><source src="assets/videos/works/bbc-gagme-bts-gaurav-sir2.mp4" type="video/mp4" /></video>
+    <video class="card card-video" style="--i: 7" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-label="Gagme Tyla Final video 3"><source src="assets/videos/works/gagme-tyla-final2.mp4" type="video/mp4" /></video>
+  </div>
+</div>      </div>
+    </section>
+
+    <section class="section social-proof-section reveal reveal-up">
+      <div class="container">
+        <p class="eyebrow">Social Proof</p>
+        <h2>Our Clients</h2>
+        <div class="clients-marquee" aria-label="Client showcase">
+          <div class="clients-track">
+            <article class="client-card"><img class="client-logo" src="assets/logos/bhim-logo-white.png" alt="Bhim" loading="lazy"></article>
+            <article class="client-card"><img class="client-logo" src="assets/logos/hfm-logo.png" alt="Hello Fitness" loading="lazy"></article>
+            <article class="client-card"><img class="client-logo" src="assets/logos/hoc2-logo.png" alt="HOC" loading="lazy"></article>
+            <article class="client-card"><img class="client-logo" src="assets/logos/macwin-logo.png" alt="Macwin" loading="lazy"></article>
+            <article class="client-card"><img class="client-logo" src="assets/logos/minicubs-logo.png" alt="Minicubs" loading="lazy"></article>
+            <article class="client-card"><img class="client-logo" src="assets/logos/the-grind-logo.png" alt="The Grind" loading="lazy"></article>
+            <article class="client-card"><img class="client-logo client-logo--topboy" src="assets/logos/topboy-pizza-blue.png" alt="Topboy Pizza" loading="lazy"></article>
+            <article class="client-card"><img class="client-logo client-logo--sajori" src="assets/logos/circle-logo-white.png" alt="Sajori" loading="lazy"></article>
+            <article class="client-card"><img class="client-logo client-logo--1990" src="assets/logos/1990-logo.png" alt="1990" loading="lazy"></article>
+          </div>
+        </div>
+        <p class="inline-actions"><a href="case-studies.html" class="btn btn-secondary">See Success Stories</a></p>
+      </div>
+    </section>
+    <section class="section cta-band reveal reveal-up">
+      <div class="container cta-ref-layout">
+        <div class="cta-ref-copy">
+          <p class="cta-ref-kicker">Need clarity on your next move?</p>
+          <h2>Let's connect and build a practical growth plan you can execute.</h2>
+          <div class="cta-ref-points" aria-label="Call highlights">
+            <span>Strategy-first guidance</span>
+            <span>Execution roadmap</span>
+            <span>Clear next steps</span>
+          </div>
+        </div>
+
+        <div class="cta-ref-action">
+<a href="contact.html" class="cta-ref-btn">LET'S CONNECT</a>
+          <a href="services.html" class="cta-ref-link">Explore services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="avalanche-footer" id="strategy-footer">
+      <div class="ui-layer">
+        <h2>Consulting and Marketing Growth Framework</h2>
+        <p>Explore strategic and digital marketing building blocks used to create predictable business growth.</p>
+        <div class="controls">
+          <button id="btn-gravity" type="button">Zero Gravity</button>
+          <button id="btn-explode" type="button">Explode</button>
+        </div>
+      </div>
+      <div id="scene-container"></div>
+    </section>
+  </main>
+
+    <section class="global-pill-strip" aria-label="Growth keywords">
+    <div class="global-pill-track">
+      <span class="global-pill">Strategic Marketing Planning</span>
+      <span class="global-pill">Business Growth Consulting</span>
+      <span class="global-pill">Performance Advertising</span>
+      <span class="global-pill">Social Media Strategy</span>
+      <span class="global-pill">Website Strategy</span>
+      <span class="global-pill">Revenue Optimization</span>
+      <span class="global-pill">Lead Generation</span>
+      <span class="global-pill">Brand Positioning</span>
+      <span class="global-pill">Conversion Funnel</span>
+      <span class="global-pill">Content Systems</span>
+      <span class="global-pill">Market Research</span>
+      <span class="global-pill">Scalable Growth</span>
+    </div>
+  </section>
+
+  <footer class="site-footer global-site-footer">
+    <div class="container global-footer-grid">
+      <div class="global-footer-brand">
+        <a class="brand" href="index.html" aria-label="Chessboard Strategy">
+        <img class="brand-logo" src="assets/images/chessboard-strategy-logo-white.png" alt="Chessboard Strategy" loading="lazy" decoding="async">
+      </a>
+        <p>Strategy and execution partner for brands that want predictable, measurable growth.</p>
+        <div class="global-footer-social">
+          <a href="https://wa.me/917888967448" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.4 16.7L2 22l5.5-1.4A11 11 0 1 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3.3.8.9-3.2-.2-.3A9 9 0 1 1 12 20.5Zm4.9-6.5c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1a7.3 7.3 0 0 1-2.2-1.3 8.3 8.3 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.1s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.2 2.8 1.2 2.8.8 3.3.8.5-.1 1.8-.8 2-1.5.3-.7.3-1.4.2-1.5 0-.1-.3-.2-.6-.4Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/chessboard_co?igsh=dzBwMm15c3RqNjk1" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11.3 1.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61587739146532" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V4.8A22 22 0 0 0 14.3 4c-2.5 0-4.2 1.5-4.2 4.3V11H7.5v3h2.6v8h3.4Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="global-footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="insights.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="global-footer-contact">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="mailto:hello@chessboardco.com">hello@chessboardco.com</a></li>
+          <li><a href="tel:7888967448">7888967448</a></li>
+          <li>India, serving global clients</li>
+          <li>1018, B-wing ,SNS Atria, Vesu,Surat 395007</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container global-footer-bottom">
+      <p>2026 Chessboard Strategy All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js" defer></script>
+  <script src="motion.js" defer></script>
+  <script src="chessboard-loader.js" defer></script>
+  <script src="hero-word-scrub.js" defer></script>
+  <script src="cards-flip.js" defer></script>
+  <script src="bb-services-slider.js" defer></script>
+  <script src="footer-avalanche.js" defer></script>
+  <script src="clients-marquee.js" defer></script>
+  <script src="wave-services.js" defer></script>
+
+    <script src="neon-trail.js" defer></script>
+  <script src="mobile-nav.js" defer></script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
